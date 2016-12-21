@@ -1,4 +1,4 @@
-# MicroMouse project files.
+# MicroMouse Project Files
 
 To build, type:
 ```
