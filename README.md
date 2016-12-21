@@ -1,8 +1,6 @@
 # MicroMouse project files.
 
-To build:
-
-Type:
+To build, type:
 ```
 make
 ./MazeSolver
