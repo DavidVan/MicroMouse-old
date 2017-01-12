@@ -3,6 +3,9 @@
 To build, type:
 ```
 make
+```
+To run, type:
+```
 ./MazeSolver
 ```
 
