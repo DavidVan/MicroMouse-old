@@ -4,12 +4,12 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-void initializeMaze(struct Block (*)[][16]);
-void calculateMazeDistance(struct Block (*)[][16]);
-void flood(struct Block (*)[][16]);
+void initializeMaze(struct Block (*)[16][16]);
+void calculateMazeDistance(struct Block (*)[16][16]);
+void flood(struct Block (*)[16][16]);
 int manhattanDistance(int, int, int, int);
 int minimum(int, int, int, int);
-void printDistance(struct Block (*)[][16]);
+void printDistance(struct Block (*)[16][16]);
 
 void initializeMaze(struct Block (*maze)[16][16]) { // Make sure all four sides of maze have walls.
     for (int i = 0; i < 16; i++) {

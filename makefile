@@ -1,8 +1,8 @@
-CC=gcc
-CFLAGS=-c -std=c99 -Wall -pedantic -march=native -Ofast
+CC=g++
+CFLAGS=-c -std=c++1y -Wall -pedantic -march=native -Ofast
 LDFLAGS=
-SRC=MazeSolver.c
-OBJ=$(SRC:.c=.o)
+SRC=MazeSolver.cpp
+OBJ=$(SRC:.cpp=.o)
 EXE=MazeSolver
 
 all: $(SRC) $(EXE)
@@ -10,7 +10,7 @@ all: $(SRC) $(EXE)
 $(EXE): $(OBJ)
 	$(CC) $(LDFLAGS) $(OBJ) -o $@
 
-.c.o:
+.cpp.o:
 	$(CC) $(CFLAGS) $< -o $@
 
 .PHONY: clean
